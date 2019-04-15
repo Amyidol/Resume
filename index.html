@@ -7,237 +7,247 @@
     <link rel="icon" href="https://raw.githubusercontent.com/wiki/Amyidol/isetanspecial/favicon.ico" />
     <link href="https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
     <style>
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-    body {
-        font-size: 14px;
-        font-family: "microsoft yahei";
-        background-color: #ffffff
-    }
+        body {
+            font-size: 14px;
+            font-family: "microsoft yahei";
+            background-color: #ffffff
+        }
 
-    ul,li,a {
-        list-style: none;
-        display: inline-block;
-        text-decoration: none;
-    }
+        ul,
+        li,
+        a {
+            list-style: none;
+            display: inline-block;
+            text-decoration: none;
+        }
 
-    ul li {
-        margin-left: 10px;
-        margin-top: 1px;
-    }
+        ul li {
+            margin-left: 10px;
+            margin-top: 1px;
+        }
 
-    ul li li:first-child {
-        line-height: 30px;
-        font-size: 18px;
-        padding-bottom: 5px;
-        margin: 8px 0 12px 8px;
-        width: 90%;
-        border-bottom: 2px solid #ccc;
-        letter-spacing: 0.1em;
-    }
+        ul li li:first-child {
+            line-height: 30px;
+            font-size: 18px;
+            padding-bottom: 5px;
+            margin: 8px 0 12px 8px;
+            width: 90%;
+            border-bottom: 2px solid #ccc;
+            letter-spacing: 0.1em;
+        }
 
-    ul li i {
-        margin-right: 15px;
-    }
+        ul li i {
+            margin-right: 15px;
+        }
 
-    ul li ul li p {
-        width: 98px;
-        float: left;
-        margin-left: 10px;
-    }
+        ul li ul li p {
+            width: 98px;
+            float: left;
+            margin-left: 10px;
+        }
 
-    .column {
-        width: 1450px;
-        height: 100%;
-        position: relative;
-        margin: auto;
-    }
+        .column {
+            width: 1450px;
+            height: 100%;
+            position: relative;
+            margin: auto;
+        }
 
-    .column-left {
-        width: 22%;
-        background-color: #c3e0f7;
-        position: absolute;
-        left: 0;
-        padding: 25px 5px;
-        box-sizing: border-box;
-    }
+        .column-left {
+            width: 22%;
+            background-color: #c3e0f7;
+            position: absolute;
+            left: 0;
+            padding: 25px 5px;
+            box-sizing: border-box;
+        }
 
-    .column-left ul li ul li span {
-        width: 165px;
-        float: left;
-        word-wrap: break-word;
-        word-break: break-all;
-        line-height: 22px;
-    }
+        .column-left ul li ul li span {
+            width: 165px;
+            float: left;
+            word-wrap: break-word;
+            word-break: break-all;
+            line-height: 22px;
+        }
 
-    .left-hbox {
-        width: 90%;
-        margin: 0 auto;
-    }
+        .left-hbox {
+            width: 90%;
+            margin: 0 auto;
+        }
 
-    .left-img {
-        width: 130px;
-        height: 140px;
-        margin: 0 auto;
-    }
+        .left-img {
+            width: 130px;
+            height: 140px;
+            margin: 0 auto;
+        }
 
-    .left-img img {
-        width: 100%;
-        height: 100%;
-        margin: 0 auto;
-        border-radius: 50%;
-    }
+        .left-img img {
+            width: 100%;
+            height: 100%;
+            margin: 0 auto;
+            border-radius: 50%;
+        }
 
-    .left-img,
-    .left-hbox h3,
-    .left-hbox p {
-        text-align: center;
-        margin: 10px auto;
-    }
+        .left-img,
+        .left-hbox h3,
+        .left-hbox p {
+            text-align: center;
+            margin: 10px auto;
+        }
 
-    .column-right {
-        width: 78%;
-        position: absolute;
-        right: 0;
-        padding: 20px;
-    }
+        .column-right {
+            width: 78%;
+            position: absolute;
+            right: 0;
+            padding: 20px;
+        }
 
-    .column-right ul li ul li span {
-        width: 800px;
-        float: left;
-        word-wrap: break-word;
-        word-break: break-all;
-        line-height: 25px;
-    }
+        .column-right ul li ul li span {
+            width: 800px;
+            float: left;
+            word-wrap: break-word;
+            word-break: break-all;
+            line-height: 25px;
+        }
 
-    .column-right ul li ul li p {
-        margin-left: 20px;
-    }
+        .column-right ul li ul li p {
+            margin-left: 20px;
+        }
 
-    .tag {
-        font-size: 12px;
-        padding-left: 5px;
-    }
+        .tag {
+            font-size: 12px;
+            padding-left: 5px;
+        }
 
-    .tit {
-        width: 80%;
-        border-bottom: 1px solid #ccc;
-        margin: 20px auto;
-    }
+        .tit {
+            width: 80%;
+            border-bottom: 1px solid #ccc;
+            margin: 20px auto;
+        }
 
-    .share {
+        .share {
 
-        text-align: center;
-        position: absolute;
-        margin-top: 1500px;
-    }
+            /* text-align: center; */
+            /* position: fixed; */
+            bottom: 0;
+           
+        }
 
-    .share ul.share-group {
-        display: block;
-        width: 1450px;
-        margin: 0 auto;
-        padding: 20px;
-    }
+        .share ul.share-group {
+            display: block;
+            /* width: 1450px; */
+            /* margin: 0 auto; */
+            padding-top: 20px;
+        }
 
-    .share .share-group li {
-        display: inline-block;
-        padding: 10px;
-    }
+        .share .share-group li {
+            display: inline-block;
+        }
 
-    .share .copy {
-        padding-bottom: 20px;
-    }
+        .share .copy {
+            padding-bottom: 20px;
+        }
 
-    .l-ul img {
-        width: 90%;
-        height: 50%;
-    }
+        .l-ul img {
+            width: 90%;
+            height: 50%;
+        }
 
-    .progress {
-        height: 20px;
-        background: #ebebeb;
-        border-left: 1px solid transparent;
-        border-right: 1px solid transparent;
-        border-radius: 10px;
-        margin-left: 2px;
-    }
+        .progress {
+            height: 20px;
+            background: #ebebeb;
+            border-left: 1px solid transparent;
+            border-right: 1px solid transparent;
+            border-radius: 10px;
+            margin-left: 2px;
+        }
 
-    .progress>span {
-        position: relative;
-        margin: 0 -1px;
-        min-width: 30px;
-        height: 18px;
-        text-align: right;
-        border: 1px solid;
-        border-radius: 10px;
-        background-image: -webkit-linear-gradient(top, #f0f0f0 0%, #dbdbdb 70%, #cccccc 100%);
-        background-image: -moz-linear-gradient(top, #f0f0f0 0%, #dbdbdb 70%, #cccccc 100%);
-        background-image: -o-linear-gradient(top, #f0f0f0 0%, #dbdbdb 70%, #cccccc 100%);
-        background-image: linear-gradient(to bottom, #f0f0f0 0%, #dbdbdb 70%, #cccccc 100%);
-        -webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.3), 0 1px 2px rgba(0, 0, 0, 0.2);
-        box-shadow: inset 0 1px rgba(255, 255, 255, 0.3), 0 1px 2px rgba(0, 0, 0, 0.2);
-    }
+        .progress>span {
+            position: relative;
+            margin: 0 -1px;
+            min-width: 30px;
+            height: 18px;
+            text-align: right;
+            border: 1px solid;
+            border-radius: 10px;
+            background-image: -webkit-linear-gradient(top, #f0f0f0 0%, #dbdbdb 70%, #cccccc 100%);
+            background-image: -moz-linear-gradient(top, #f0f0f0 0%, #dbdbdb 70%, #cccccc 100%);
+            background-image: -o-linear-gradient(top, #f0f0f0 0%, #dbdbdb 70%, #cccccc 100%);
+            background-image: linear-gradient(to bottom, #f0f0f0 0%, #dbdbdb 70%, #cccccc 100%);
+            -webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.3), 0 1px 2px rgba(0, 0, 0, 0.2);
+            box-shadow: inset 0 1px rgba(255, 255, 255, 0.3), 0 1px 2px rgba(0, 0, 0, 0.2);
+        }
 
-    .progress>span>.deg {
-        padding: 0 8px;
-        font-size: 11px;
-        font-weight: bold;
-        color: #404040;
-        color: rgba(0, 0, 0, 0.7);
-        text-shadow: 0 1px rgba(255, 255, 255, 0.4);
-    }
+        .progress>span>.deg {
+            padding: 0 8px;
+            font-size: 11px;
+            font-weight: bold;
+            color: #404040;
+            color: rgba(0, 0, 0, 0.7);
+            text-shadow: 0 1px rgba(255, 255, 255, 0.4);
+        }
 
-    .progress>.deg:before {
-        content: '';
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        z-index: 1;
-        height: 18px;
-        border-radius: 10px;
-    }
+        .progress>.deg:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 1;
+            height: 18px;
+            border-radius: 10px;
+        }
 
-    .progress .green {
-        background: #85c440;
-        border-color: #78b337 #6ba031 #568128;
-        background-image: -webkit-linear-gradient(top, #b7dc8e 0%, #99ce5f 70%, #85c440 100%);
-        background-image: -moz-linear-gradient(top, #b7dc8e 0%, #99ce5f 70%, #85c440 100%);
-        background-image: -o-linear-gradient(top, #b7dc8e 0%, #99ce5f 70%, #85c440 100%);
-        background-image: linear-gradient(to bottom, #b7dc8e 0%, #99ce5f 70%, #85c440 100%);
-    }
+        .progress .green {
+            background: #85c440;
+            border-color: #78b337 #6ba031 #568128;
+            background-image: -webkit-linear-gradient(top, #b7dc8e 0%, #99ce5f 70%, #85c440 100%);
+            background-image: -moz-linear-gradient(top, #b7dc8e 0%, #99ce5f 70%, #85c440 100%);
+            background-image: -o-linear-gradient(top, #b7dc8e 0%, #99ce5f 70%, #85c440 100%);
+            background-image: linear-gradient(to bottom, #b7dc8e 0%, #99ce5f 70%, #85c440 100%);
+        }
 
-    .progress .pink {
-        background: #d934cc;
-        border-color: #dd52d3 #ee58e3 #e355d8;
-        background-image: -webkit-linear-gradient(top, #ea8a7e 0%, #e15a4a 70%, #db3a27 100%);
-        background-image: -moz-linear-gradient(top, #ea8a7e 0%, #e15a4a 70%, #db3a27 100%);
-        background-image: -o-linear-gradient(top, #ea8a7e 0%, #e15a4a 70%, #db3a27 100%);
-        background-image: linear-gradient(to bottom, #ec80e3 0%, #d563cc 70%, #e65be5 100%);
-    }
+        .progress .pink {
+            background: #d934cc;
+            border-color: #dd52d3 #ee58e3 #e355d8;
+            background-image: -webkit-linear-gradient(top, #ea8a7e 0%, #e15a4a 70%, #db3a27 100%);
+            background-image: -moz-linear-gradient(top, #ea8a7e 0%, #e15a4a 70%, #db3a27 100%);
+            background-image: -o-linear-gradient(top, #ea8a7e 0%, #e15a4a 70%, #db3a27 100%);
+            background-image: linear-gradient(to bottom, #ec80e3 0%, #d563cc 70%, #e65be5 100%);
+        }
 
-    .progress .orange {
-        background: #f2b63c;
-        border-color: #f0ad24 #eba310 #c5880d;
-        background-image: -webkit-linear-gradient(top, #f8da9c 0%, #f5c462 70%, #f2b63c 100%);
-        background-image: -moz-linear-gradient(top, #f8da9c 0%, #f5c462 70%, #f2b63c 100%);
-        background-image: -o-linear-gradient(top, #f8da9c 0%, #f5c462 70%, #f2b63c 100%);
-        background-image: linear-gradient(to bottom, #f8da9c 0%, #f5c462 70%, #f2b63c 100%);
-    }
+        .progress .orange {
+            background: #f2b63c;
+            border-color: #f0ad24 #eba310 #c5880d;
+            background-image: -webkit-linear-gradient(top, #f8da9c 0%, #f5c462 70%, #f2b63c 100%);
+            background-image: -moz-linear-gradient(top, #f8da9c 0%, #f5c462 70%, #f2b63c 100%);
+            background-image: -o-linear-gradient(top, #f8da9c 0%, #f5c462 70%, #f2b63c 100%);
+            background-image: linear-gradient(to bottom, #f8da9c 0%, #f5c462 70%, #f2b63c 100%);
+        }
 
-    .progress .blue {
-        background: #5aaadb;
-        border-color: #459fd6 #3094d2 #277db2;
-        background-image: -webkit-linear-gradient(top, #aed5ed 0%, #7bbbe2 70%, #5aaadb 100%);
-        background-image: -moz-linear-gradient(top, #aed5ed 0%, #7bbbe2 70%, #5aaadb 100%);
-        background-image: -o-linear-gradient(top, #aed5ed 0%, #7bbbe2 70%, #5aaadb 100%);
-        background-image: linear-gradient(to bottom, #aed5ed 0%, #7bbbe2 70%, #5aaadb 100%);
-    }
+        .progress .blue {
+            background: #5aaadb;
+            border-color: #459fd6 #3094d2 #277db2;
+            background-image: -webkit-linear-gradient(top, #aed5ed 0%, #7bbbe2 70%, #5aaadb 100%);
+            background-image: -moz-linear-gradient(top, #aed5ed 0%, #7bbbe2 70%, #5aaadb 100%);
+            background-image: -o-linear-gradient(top, #aed5ed 0%, #7bbbe2 70%, #5aaadb 100%);
+            background-image: linear-gradient(to bottom, #aed5ed 0%, #7bbbe2 70%, #5aaadb 100%);
+        }
+        .progress .blueskye {
+            background: #409EFF;
+            border-color: rgb(56, 149, 243) #2b8dca #277db2;
+            background-image: -webkit-linear-gradient(top, #aed5ed 0%, #7bbbe2 70%, #5aaadb 100%);
+            background-image: -moz-linear-gradient(top, #aed5ed 0%, #7bbbe2 70%, #5aaadb 100%);
+            background-image: -o-linear-gradient(top, #aed5ed 0%, #7bbbe2 70%, #5aaadb 100%);
+            background-image: linear-gradient(to bottom, #aed5ed 0%, #7bbbe2 70%, #5aaadb 100%);
+        }
     </style>
 </head>
 
@@ -257,191 +267,336 @@
                     <ul>
                         <li><i class="fa fa-address-book fa-lg"></i>基本信息</li>
                         <li>
-                            <p>姓名&nbsp;</p><span>孙军鲜</span></li>
+                            <p>姓名&nbsp;</p><span>孙军鲜</span>
+                        </li>
                         <li>
-                            <p>学历&nbsp;</p><span>本科</span></li>
+                            <p>学历&nbsp;</p><span>本科</span>
+                        </li>
                         <li>
-                            <p>在读院校&nbsp;</p><span>河南理工大学（211院校）</span></li>
+                            <p>在读院校&nbsp;</p><span>河南理工大学</span>
+                        </li>
                         <li>
-                            <p>在读年份&nbsp;</p><span>2018年</span></li>
+                            <p>在读年份&nbsp;</p><span>2018年</span>
+                        </li>
                     </ul>
                 </li>
                 <li>
                     <ul>
                         <li><i class="fa fa-phone fa-lg"></i>联系方式</li>
                         <li>
-                            <p>手机&nbsp;</p><span>15221753986</span></li>
+                            <p>手机&nbsp;</p><span>15221753986</span>
+                        </li>
                         <li>
-                            <p>邮箱&nbsp;</p><span>15221753986@163.com</span></li>
+                            <p>邮箱&nbsp;</p><span>15221753986@163.com</span>
+                        </li>
                         <li>
-                            <p>微信&nbsp;</p><span>s963061645</span></li>
+                            <p>微信&nbsp;</p><span>s963061645</span>
+                        </li>
                         <li>
-                            <p>github&nbsp;</p><span><a href="https://github.com/Amyidol/">https://github.com/Amyidol/</a></span> </li>
+                            <p>github&nbsp;</p><span><a
+                                    href="https://github.com/Amyidol/">https://github.com/Amyidol/</a></span>
+                        </li>
                     </ul>
                 </li>
                 <li>
                     <ul>
                         <li><i class="fa fa-star fa-lg"></i>技能点</li>
                         <li>
-                            <p>html5/css3&nbsp;</p> <span> 
-         <div class="progress"> 
-          <span class="green" style="width: 85%;">
-           <div class="deg">
-            85%
-           </div></span>
+                            <p>html5/css3&nbsp;</p> <span>
+                                    <div class="progress">
+                                        <span class="blueskye" style="width: 90%;">
+                                            <div class="deg">
+                                                90%
+                                            </div>
+                                        </span>
+                                    </div>
+                                </span>
+                            </li>
+                        <li>
+                                <p>vue2.0&nbsp;</p> <span>
+                                    <div class="progress">
+                                        <span class="green" style="width: 90%;">
+                                            <div class="deg">
+                                                90%
+                                            </div>
+                                        </span>
+                                    </div>
+                                </span>
+                            </li>
+
+                        <li>
+                            <p>js/jQuery&nbsp;</p> <span>
+                                <div class="progress">
+                                    <span class="orange" style="width: 80%;">
+                                        <div class="deg">
+                                            85%
+                                        </div>
+                                    </span>
+                                </div>
+                            </span>
+                        </li>
+                        <li>
+                            <p>微信小程序&nbsp;</p> <span>
+                                <div class="progress">
+                                    <span class="pink" style="width: 70%;">
+                                        <div class="deg">
+                                            30%
+                                        </div>
+                                    </span>
+                                </div>
+                            </span>
+                        </li>
+
+                        <li>
+                            <p>日语能力良好&nbsp;</p> <span>
+                                <div class="progress">
+                                    <span class="blue" style="width: 85%;">
+                                        <div class="deg">
+                                            85%
+                                        </div>
+                                    </span>
+                                </div>
+                            </span>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        <li><i class="fa fa-gear fa-lg"></i>技术栈</li>
+                        <li>
+                            <p style="width:70px;">前端&nbsp;</p>
+                            <span style="width:200px;">html，css，Vue2.0，jQuery，Javascript，webpack，ES6，<br/>Bootstrap，underscorejs，ajax/json</span>
+                        </li>
+                        <li>
+                           <p style="width:70px;">其它语言&nbsp;</p><span>日语，英语</span>
+                        </li>
+                        <li>
+                          <p style="width:70px;">其他&nbsp;</p><span>photoshop，AI，office</span>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        <li><i class="fa fa-location-arrow fa-lg"></i>项目地址</li>
+                        <li>github：<a href="https://github.com/Amyidol">https://github.com/Amyidol/</a></li>
+                        <li>csdn：<a href="http://my.csdn.net/">http://my.csdn.net/</a></li>
+                        <li>
+                            <p>&nbsp;</p>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <ul class="l-ul">
+                        <li><i class="fa fa-weixin fa-lg"></i>个人微信</li>
+                        <li><img src="https://raw.githubusercontent.com/wiki/Amyidol/isetanspecial/weixin.jpg" alt="" />
+                        </li>
+                    </ul>
+                </li>
+                <!-- <li style="height:400px;">
+                        
+                </li> -->
+            </ul>
         </div>
-        </span>
-        </li>
-        <li>
-            <p>js/jQuery&nbsp;</p> <span> 
-         <div class="progress"> 
-          <span class="orange" style="width: 75%;">
-           <div class="deg">
-            75%
-           </div></span>
-    </div>
-    </span>
-    </li>
-    <li>
-        <p>Bootstrap&nbsp;</p> <span> 
-         <div class="progress"> 
-          <span class="pink" style="width: 70%;">
-           <div class="deg">
-            70%
-           </div></span>
+        <div class="column-right">
+            <ul class="column-ul">
+                <li>
+                    <ul>
+                        <li><i class="fa fa-briefcase fa-lg"></i>求职意向</li>
+                        <li>
+                            <p>个人标签：</p> <span>性格温和 &nbsp;乐观 &nbsp;稳重 &nbsp;好学 &nbsp;会日语&nbsp;</span>
+                        </li>
+                        <li>
+                            <p>求职地点：</p><span>上海</span>
+                        </li>
+                        <li>
+                            <p>期望薪资：</p><span>12000-15000</span>
+                        </li>
+                        <li>
+                            <p>工作职能：</p><span>Web前端开发 </span>
+                        </li>
+                        <li>
+                            <p>工作类型：</p><span>全职</span>
+                        </li>
+                        <li>
+                            <p>自我评价：</p><span>
+                                1，运用Web前端技术，Html/Css/JavaScript/Ajax/json数据处理。熟悉并遵从JavaScript编码规范，高质量、可维护的代码。<br />
+                                2，熟练vue前端框架，包括Vue2.0，vuex，Webpack，nodejs，axios/fecth，elementui，有前后端分离架构的开发经验.<br />
+                                3，熟练使用git 代码管理工具。<br />
+                                4，熟悉移动端开发以及Bootstrop流式布局进行响应式页面开发，<br />
+                                5，自学能力强，能在项目团队里进行良好的沟通，通过关注web前端相关微信公众号/技术交流群<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Github及CSDN等技术性网站，学习了解新技术
+                                <br />●&nbsp;开发技能：html5/css3、JavaScript、jQuery/underscorejs、Ajax/json、Bootstrap、Vue等<br />●&nbsp;开发工具：sublime、webstrom、PS，VScode，Git
+                                等<br />●&nbsp;其他技能：已获得（JLPT）日本语能力测试2级证书<br /></span>
+                        </li>
+                        <br />
+                        <li>
+                            <p>个人座右铭：</p><span>爱生活、爱技术，爱学习，享受每一份从无到有的成就感！</span>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        <li><i class="fa fa-tags fa-lg"></i>工作经验</li>
+                        <!--一 -->
+                        <li><span>&nbsp;&nbsp;上海跨境电子商务公共服务有限公司&nbsp;|&nbsp;技术部/Web前端开发工程师</span></li>
+                        <li><span class="tag">&nbsp;2018/2-至今&nbsp;|&nbsp;互联网/电子商务&nbsp;|&nbsp; 50-150人</span>
+                        </li>
+                        <li>
+                            <p>工作描述：</p><span>担任技术部web前端开发工程师职位：1，负责公司网站前端交互设计等前端开发工作。<br />
+                                2，使用vueJs框架（基于vue2.0）结合公司的组件库进行项目开发，<br />（技术栈：vue+vue-cli+vue-router+webpack+node.js+fecth+epui（公司内部封装组件）+elementui）<br />
+                                3，根据业务部需求进行项目需求分析，撰写前端开发文档， 配合后端开发人员完成数据交互，接口调试，运用git进行项目管理<br />
+                                4，对接数据可视化大屏项目（包括前端开发文档编写，配合后端开发人员接口数据交互）等<br /> </span>
+                        </li>
+                        <div class="tit"></div>
+                        <!-- 二 -->
+                        <li><span>&nbsp;&nbsp;上海奕豆传媒有限公司&nbsp;|&nbsp;技术部/Web前端开发</span></li>
+                        <li><span class="tag">&nbsp;2016/6-2018/1&nbsp;|&nbsp;互联网/电子商务&nbsp;|&nbsp; 50-100人</span></li>
+                        <li>
+                            <p>工作描述：</p><span>1，负责页面架构构建，与ui设计师对接网站交互原型图（ps切图等）<br>
+                                根据需求分析，运用Html/css/js/ajax等技术书写前端页面，优化并维护前端代码<br />
+                                2，根据需求的不同使用较为合理的插件实现功能特效，以及主流浏览器兼容问题的解决等。<br />
+                                3、前后端的交流沟通，并将代码上传到代码托管平台，进行代码托管维护等</span>
+                        </li>
+
+
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                          <!--上海跨境电子商务公共服务有限公司 -->
+                          <li><i class="fa fa-pencil-square-o fa-lg"></i>项目经验</li>
+                          <li>
+                              <p>项目①：</p>跨境电商监测平台
+                          </li>
+                          <li>
+                              <p>所属公司：</p><span>上海跨境电子商务公共服务有限公司</span>
+                          </li>
+                          <li>
+                              <p>技术栈：</p><span>html、js、css、第三方js插件jquery、jquery.flipcountdown、highcharts、echarts；</span>
+                          </li>
+                          <li>
+                              <p>项目描述：</p><span>为响应部门对跨境电商各个平台的数据监测，开发出用于对电商站点的数据监测平台</span>
+                          </li>
+                          <li>
+                              <p>内容描述：</p>
+                              <span>基于对电商监测平台的需求理解，开发出用于对跨境电商各平台的数据监测。<br />
+                                    项目开发采用前后端分离的模式，前端采用html、js、css语言及第三方js插件jquery、jquery.flipcountdown、highcharts、echarts；<br />
+                                    后端采用java语言基于maven来管理项目的构建及springboot、mybatis框架，oracle数据库。 </span>
+                          </li>
+                          <div class="tit"></div>
+                          <li>
+                              <p>项目②：</p>用户中心项目
+                          </li>
+                          <li>
+                              <p>所属公司：</p><span>上海跨境电子商务公共服务有限公司</span>
+                          </li>
+                          <li>
+                              <p>项目描述：</p><span>为方便公司业务部对用户注册，资料提交，审核等，研发的用户注册管理系统</span>
+                          </li>
+                          <li>
+                              <p>技术栈 ：</p><span>Vue2.0，vuex，Webpack，Vue-router，Vue-cli，fecth，epui（公司内部研发ui组件库），git等</span>
+                          </li>
+                          <li>
+                              <p>内容描述：</p><span>1、前期参与业务部需求文档进行组内需求评审分析，<br />
+                                  2、根据需求文档，构建vue项目原型，mock模拟数据交互。<br />
+                                  3、开发中后端返回数据的状态值进行流程逻辑判断，参与流程图设计等<br />
+                                  4，使用git工具进行项目修改上传代码托管等 <br />
+                                  5，配合测试人员进行测试，修复bug以及提升建议</span>
+                          </li>
+                          <div class="tit"></div>
+                          <li>
+                              <p>项目③：</p>中台项目（国际化）
+                          </li>
+                          <li>
+                              <p>所属公司：</p><span>上海跨境电子商务公共服务有限公司</span>
+                          </li>
+                          <li>
+                              <p>项目描述：</p><span>该项目是为公司业务部以及国外客户业务部使用的资金数据查询系统，
+                                    为方便业务部统计数据，国外客户业务部查询数据进行开发的系统</span>
+                          </li>
+                          <li>
+                              <p>技术栈 ：</p><span>Vue2.0，vuex，Webpack，Vue-router，Vue-cli，vue-i18n，elementui，git等</span>
+                          </li>
+                          <li>
+                              <p>内容描述：</p><span>1、新增vue.js+vue-i18n国际化，<br />
+                                  2、对后端返回数据进行format处理，对应码表做字段映射等<br />
+                                  3、页面权限控制以及页面字段权限控制<br />
+                                  4，根据不同分配角色进行菜单权限控制等</span>
+                          </li>
+                          <div class="tit"></div>
+                          <li>
+                              <p>项目④：</p>旭中调研系统
+                          </li>
+                          <li>
+                              <p>所属公司：</p><span>上海跨境电子商务公共服务有限公司</span>
+                          </li>
+                          <li>
+                              <p>项目描述：</p><span>本项目主要是关于浦东新区区域数据调研系统，调研产品区域销售情况，例如某产品售卖区域以及售卖情况等，主要为方便业务新部门调研提供数据。</span>
+                          </li>
+                          <li>
+                              <p>技术栈 ：</p><span>Vue2.0，vuex，Webpack，Vue-router，Vue-cli，elementui，echarts3.0等</span>
+                          </li>
+                          <li>
+                              <p>内容描述：</p><span>
+                                    负责整个项目的前端开发，配合后台开发人员，进行前后台数据交互及展示。<br />
+                                  1、熟练使用vue导航守卫进行权限管理，根据人员职务进行页面权限分配。配合后端开发人员进行数据交互接口调用，数据处理等<br />
+                                  2、运用vue-router路由原理实现页面跳转<br />
+                                  3、使用vue钩子函数进行数据处理和视图更新渲染<br />
+                                  4，使用vuex进行数据管理，state设定数据，mutations中声明操作方法用来修改store中的数据，组件内部commit传送操作方法对应储存数据，computed中进行接收数据等</span>
+                          </li>
+                            <!-- 上海奕豆传媒有限公司 -->
+                            <div class="tit"></div>
+                        <li>
+                            <p>项目⑤：</p>教育数据统计网站
+                        </li>
+                        <li>
+                            <p>所属公司：</p><span>数据可视化网页（上海奕豆传媒有限公司）</span>
+                        </li>
+                        <li>
+                            <p>技术栈 ：</p><span>JavaScript、jQuery、Eachats(数据可视化图标插件)，ajax数据交互、json、</span>
+                        </li>
+                        <li>
+                            <p>项目描述：</p><span>教育数据提供窗口，有助于用户更容易直观的理解数据情况，把其获得的教育指标（学区方面的数据汇集到一个平台）</span>
+                        </li>
+                        <li>
+                            <p>内容描述：</p>
+                            <span>1、根据产品需求分析给出合理的网页前端结构解决方案并完成效果实现<br />2、熟练运用DIV+CSS，提供针对不同浏览器的前端页面解决方案;<br />3、通过Eachats等Javascript
+                                的图表库制作数据可视化图表<br />4、根据页面特效需求，运用jquery以及原生js实现<br />5、对Ajax交互、json数据解析等前后端交互等<br />
+                                6、维护前端代码。 </span>
+                        </li>
+                        <div class="tit"></div>
+                        <li>
+                            <p>项目⑥：</p>商城类网站
+                        </li>
+                        <li>
+                            <p>所属公司：</p><span>上海奕豆传媒有限公司</span>
+                        </li>
+                        <li>
+                            <p>项目描述：</p><span>该项目主要是模拟网上购物系统的开发，其中分为首页、商城分类页、购物车页、订单页、退出等模块。</span>
+                        </li>
+                        <li>
+                            <p>技术栈 ：</p><span>Vue，Webpack，Vue-router，Vue-cli，m-ui组件，less，Sass等</span>
+                        </li>
+                        <li>
+                            <p>内容描述：</p><span>1、使用vue的mvvm模式，实现 web 组件化开发，了解每个组件之间的依赖关系<br />
+                                2、从功能角度了解template, directive, data-binding, components 各种实用功能等<br />
+                                3、webpack实现资源的合并和打包等<br />
+                                4，使用git工具进行项目修改上传代码托管等 </span>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="share">
+                    <ul class="share-group">
+                        <li>
+                            <marquee scrollamount="5"
+                                style="font-size: 20pt;width: 100%;color: #ff7f50;line-height: 150%;font-family: 华文行楷">
+                                感谢您百忙之中查阅该简历，请多多指教！祝您生活愉快！
+                            </marquee>
+                        </li>
+                    </ul>
+                </div>
         </div>
-        </span>
-    </li>
-    <li>
-        <p>vue&nbsp;</p> <span> 
-         <div class="progress"> 
-          <span class="blue" style="width: 40%;">
-           <div class="deg">
-            40%
-           </div></span>
-        </div>
-        </span>
-    </li>
-    <li>
-        <p>日语能力良好&nbsp;</p> <span> 
-         <div class="progress"> 
-          <span class="green" style="width: 85%;">
-           <div class="deg">
-            85%
-           </div></span>
-        </div>
-        </span>
-    </li>
-    </ul>
-    </li>
-    <li>
-        <ul>
-            <li><i class="fa fa-gear fa-lg"></i>技术栈</li>
-            <li>
-                <p>前端&nbsp;</p><span>jQuery，Javascript，<br />Bootstrap，Vuejs，<br />underscorejs，ajax/json</span></li>
-            <li>
-                <p>语言&nbsp;</p><span>日语，英语</span></li>
-            <li>
-                <p>其他&nbsp;</p><span>photoshop，office等</span></li>
-        </ul>
-    </li>
-    <li>
-        <ul>
-            <li><i class="fa fa-location-arrow fa-lg"></i>项目地址</li>
-            <li>github：<a href="https://github.com/Amyidol">https://github.com/Amyidol/</a></li>
-            <li>csdn：<a href="http://my.csdn.net/">http://my.csdn.net/</a></li>
-            <li>
-                <p>&nbsp;</p>
-            </li>
-        </ul>
-    </li>
-    <li>
-        <ul class="l-ul">
-            <li><i class="fa fa-weixin fa-lg"></i>个人微信</li>
-            <li><img src="https://raw.githubusercontent.com/wiki/Amyidol/isetanspecial/weixin.jpg" alt="" /></li>
-        </ul>
-    </li>
-    </ul>
-    </div>
-    <div class="column-right">
-        <ul class="column-ul">
-            <li>
-                <ul>
-                    <li><i class="fa fa-briefcase fa-lg"></i>求职意向</li>
-                    <li>
-                        <p>个人标签：</p> <span>性格温和 &nbsp;乐观 &nbsp;稳重 &nbsp;好学 &nbsp;会日语&nbsp;</span> </li>
-                    <li>
-                        <p>求职地点：</p><span>上海</span></li>
-                    <li>
-                        <p>期望薪资：</p><span>7000-8999</span></li>
-                    <li>
-                        <p>工作职能：</p><span>Web前端开发 &nbsp; 网页设计/制作 &nbsp;</span></li>
-                    <li>
-                        <p>工作类型：</p><span>全职</span></li>
-                    <li>
-                        <p>自我评价：</p><span> 1，运用Web前端技术，Html/Css/JavaScript/Ajax。熟悉并遵从JavaScript编码规范，高质量、可维护的代码。<br /> 2，熟悉移动端开发以及Bootstrop流式布局进行响应式页面开发<br /> 3，掌握页面各种常见动画与交互效果，了解html5新增Api以及css3的流畅动画。<br /> 4，对网页内容进行前端性能优化，简化页面设计等<br /> 5，自学能力强，能在项目团队里进行良好的沟通，通过关注web前端相关微信公众号/技术交流群<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Github及CSDN等技术性网站，博客，来学习了解新技术 <br />●&nbsp;开发技能：html5/css3、JavaScript、jQuery/underscorejs、Ajax/json、Bootstrap、Vue等<br />●&nbsp;开发工具：sublime、webstrom、PS，VScode，Git 等<br />●&nbsp;其他技能：已获得（JLPT）日本语能力测试2级证书，具有良好的日语听说读写能力<br /></span></li>
-                    <br />
-                    <li>
-                        <p>个人座右铭：</p><span>爱生活、爱技术，爱学习，享受每一份从无到有的成就感！</span></li>
-                </ul>
-            </li>
-            <li>
-                <ul>
-                    <li><i class="fa fa-tags fa-lg"></i>我的经历</li>
-                    <li><span>&nbsp;&nbsp;上海奕豆传媒有限公司&nbsp;|&nbsp;技术部/Web前端开发</span></li>
-                    <li><span class="tag">&nbsp;2016年6月-至今&nbsp;|&nbsp;互联网/电子商务&nbsp;|&nbsp; 50-100人</span></li>
-                    <li>
-                        <p>工作描述：</p><span>1，负责页面架构构建，与设计师对接网站交互原型图（ps切图等）<br>
-                        根据需求分析，运用Html/css/js/ajax等技术书写前端页面，优化并维护前端代码<br />
-                        2，根据需求的不同使用较为合理的插件实现功能特效，以及主流浏览器兼容问题的解决等。<br />
-                        3、前后端的交流沟通，并将代码上传到代码托管平台，进行代码托管维护等</span></li>
-                    <div class="tit"></div>
-                    <li><span>&nbsp;&nbsp;上海哈路信息技术有限公司&nbsp;|&nbsp;ISP业务部/业务管理</span></li>
-                    <li><span class="tag">&nbsp;2014年5月-2016年3月&nbsp;|&nbsp;软件开发/通信&nbsp;|&nbsp; 100-500人</span></li>
-                    <li>
-                        <p>工作描述：</p><span>1，辅助leader对接日本部的业务委托，以及日方邮件处理等<br /> 2，处理客户邮件以及部门内通信业务信息处理等<br /> 3，小组内的业务邮件应对等<br /> </span></li>
-                </ul>
-            </li>
-            <li>
-                <ul>
-                    <li><i class="fa fa-pencil-square-o fa-lg"></i>项目经验</li>
-                    <li>
-                        <p>名称：</p>教育数据统计网站</li>
-                    <li>
-                        <p>所属类别：</p><span>数据可视化网页</span></li>
-                    <li>
-                        <p>技术栈 ：</p><span>JavaScript、jQuery、Eachats(数据可视化图标插件)，ajax数据交互、json、</span></li>
-                    <li>
-                        <p>项目描述 ：</p><span>教育数据提供窗口，有助于用户更容易直观的理解数据情况，把其获得的教育指标（学区方面的数据汇集到一个平台）</span></li>
-                    <li>
-                        <p>内容描述：</p><span>1、根据产品需求分析给出合理的网页前端结构解决方案并完成效果实现<br />2、熟练运用DIV+CSS，提供针对不同浏览器的前端页面解决方案;<br />3、通过Eachats等Javascript 的图表库制作数据可视化图表<br />4、根据页面特效需求，运用jquery以及原生js实现<br />5、对Ajax交互、json数据解析等前后端交互等<br /> 6、维护前端代码。 </span> </li>
-                    <div class="tit"></div>
-                    <li>
-                        <p>名称：</p>商城类网站</li>
-                    <li>
-                        <p>所属类别：</p><span>实践项目</span></li>
-                    <li>
-                        <p>项目描述 ：</p><span>该项目主要是模拟网上购物系统的开发，其中分为首页、商城分类页、购物车页、订单页、退出等模块。</span></li>
-                    <li>
-                        <p>技术栈 ：</p><span>Vue，Webpack，Vue-router，Vue-cli，m-ui组件，less，Sass等</span></li>
-                    <li>
-                        <p>内容描述：</p><span>1、使用vue的mvvm模式，实现 web 组件化开发，了解每个组件之间的依赖关系<br />2、从功能角度了解template, directive, data-binding, components 各种实用功能等<br /> 3、webpack实现资源的合并和打包等<br />4，使用git工具进行项目修改上传代码托管等 </span></li>
-                </ul>
-            </li>
-        </ul>
-    </div>
-    <div class="share">
-        <ul class="share-group">
-            <li>
-                <marquee scrollamount="5" style="font-size: 20pt;width: 100%;color: #ff7f50;line-height: 150%;font-family: 华文行楷">
-                    感谢您百忙之中查阅该简历，请多多指教！祝您生活愉快！
-                </marquee>
-            </li>
-        </ul>
-        <div class="copy">
-            @ Amyidol
-        </div>
-    </div>
+
     </div>
 </body>
 
